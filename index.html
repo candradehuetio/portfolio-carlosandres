@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CARLOS ANDRES — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <!-- Font Awesome para iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ========== NAVEGACIÓN ========== -->
+  <header id="header">
+    <nav class="nav-container">
+      <a href="#inicio" class="nav-logo">CARLOS ANDRES <span class="dot">.</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#formacion">Formación</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <!-- Toggle modo oscuro (elemento diferenciador) -->
+      <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+        <i class="fas fa-moon" id="themeIcon"></i>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ========== SECCIÓN INICIO / HERO ========== -->
+    <section id="inicio" class="hero">
+      <div class="hero-bg-shape"></div>
+      <div class="hero-content">
+        <p class="hero-greeting">Hola, soy</p>
+        <h1 class="hero-name">CARLOS ANDRES ANDRADE HUETIO</h1>
+        <p class="hero-title">Estudiante de 1.º DAM <span class="separator">·</span> Apasionado/a por el desarrollo web</p>
+        <p class="hero-subtitle">
+          <!-- Escribe aquí una frase corta que te describa profesionalmente -->
+          Construyendo mis primeras aplicaciones con ganas de aprender y crecer en el mundo tech.
+        </p>
+        <div class="hero-actions">
+          <a href="#proyectos" class="btn btn-primary">Ver mis proyectos</a>
+          <a href="#contacto" class="btn btn-outline">Contáctame</a>
+        </div>
+      </div>
+      <div class="hero-image-wrapper">
+        <div class="hero-image-frame">
+          <!-- SUSTITUYE foto-perfil.jpg por tu foto real -->
+          <img src="assets/img/cv-foto.jpg" alt="Foto de TU NOMBRE" class="hero-photo" />
+        </div>
+        <div class="hero-image-deco"></div>
+      </div>
+    </section>
+
+    <!-- ========== SECCIÓN SOBRE MÍ ========== -->
+    <section id="sobre-mi" class="about">
+      <div class="container">
+        <div class="section-label">01 — Sobre mí</div>
+        <h2 class="section-title">Conóceme un poco</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <!-- SUSTITUYE este texto por tu propio texto personal (mínimo 80 palabras) -->
+            <p>
+              Soy [TU NOMBRE], tengo [EDAD] años y soy de [TU CIUDAD]. Siempre me ha llamado la atención
+              cómo funciona la tecnología por dentro, lo que me llevó a decidirme por estudiar el ciclo de
+              Desarrollo de Aplicaciones Multiplataforma.
+            </p>
+            <p>
+              Elegí informática porque me gusta resolver problemas de forma lógica y ver cómo una idea se
+              convierte en algo real que puedes usar. Me motiva especialmente el desarrollo [web / backend /
+              móvil — escoge el que más te guste] y tengo ganas de seguir aprendiendo y crecer en ese campo.
+            </p>
+            <p>
+              Fuera del ordenador me gusta [TU AFICIÓN]. Creo que ese lado me ayuda a ser más
+              [creativo/a, metódico/a, etc.] también cuando programo.
+            </p>
+          </div>
+          <div class="about-stats">
+            <div class="stat-card">
+              <span class="stat-number">1.º</span>
+              <span class="stat-label">Año en DAM</span>
+            </div>
+            <div class="stat-card">
+              <!-- Cambia el número por los proyectos que tengas -->
+              <span class="stat-number">2+</span>
+              <span class="stat-label">Proyectos realizados</span>
+            </div>
+            <div class="stat-card">
+              <!-- Cambia por los lenguajes que conozcas -->
+              <span class="stat-number">4+</span>
+              <span class="stat-label">Tecnologías aprendidas</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SECCIÓN HABILIDADES ========== -->
+    <section id="habilidades" class="skills">
+      <div class="container">
+        <div class="section-label">02 — Habilidades</div>
+        <h2 class="section-title">Tecnologías y herramientas</h2>
+        <div class="skills-grid">
+
+          <!-- LENGUAJES -->
+          <div class="skill-category">
+            <h3 class="skill-cat-title"><i class="fas fa-code"></i> Lenguajes</h3>
+            <div class="skill-list">
+              <!-- Cambia los nombres y niveles según tus habilidades reales -->
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">HTML5</span>
+                  <span class="skill-level nivel-medio">Medio</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="--fill: 65%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">CSS3</span>
+                  <span class="skill-level nivel-medio">Medio</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="--fill: 60%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Java</span>
+                  <span class="skill-level nivel-basico">Básico</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="--fill: 45%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Python</span>
+                  <span class="skill-level nivel-basico">Básico</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="--fill: 35%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">SQL</span>
+                  <span class="skill-level nivel-basico">Básico</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="--fill: 40%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- HERRAMIENTAS -->
+          <div class="skill-category">
+            <h3 class="skill-cat-title"><i class="fas fa-tools"></i> Herramientas</h3>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Git / GitHub</span>
+                  <span class="skill-level nivel-medio">Medio</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="--fill: 55%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">VS Code</span>
+                  <span class="skill-level nivel-medio">Medio</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="--fill: 70%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">IntelliJ IDEA</span>
+                  <span class="skill-level nivel-basico">Básico</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="--fill: 40%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- OTROS -->
+          <div class="skill-category">
+            <h3 class="skill-cat-title"><i class="fas fa-star"></i> Otros</h3>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Inglés</span>
+                  <span class="skill-level nivel-medio">B1</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="--fill: 55%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Ofimática</span>
+                  <span class="skill-level nivel-avanzado">Avanzado</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="--fill: 80%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Trabajo en equipo</span>
+                  <span class="skill-level nivel-medio">Medio</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" style="--fill: 70%"></div></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SECCIÓN PROYECTOS ========== -->
+    <section id="proyectos" class="projects">
+      <div class="container">
+        <div class="section-label">03 — Proyectos</div>
+        <h2 class="section-title">Lo que he construido</h2>
+        <div class="projects-grid">
+
+          <!-- PROYECTO 1 — Cambia todo por tu proyecto real -->
+          <article class="project-card">
+            <div class="project-image">
+              <!-- SUSTITUYE por una captura de tu proyecto -->
+              <img src="assets/img/proyecto1.png" alt="Captura del Proyecto 1" />
+              <div class="project-overlay">
+                <a href="https://github.com/TU_USUARIO/TU_REPO" target="_blank" rel="noopener" class="project-link" aria-label="Ver en GitHub">
+                  <i class="fab fa-github"></i>
+                </a>
+                <!-- Si tienes demo en vivo, descomenta esto:
+                <a href="URL_DEMO" target="_blank" rel="noopener" class="project-link" aria-label="Ver demo">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+                -->
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Nombre del Proyecto 1</h3>
+              <p class="project-desc">
+                Describe aquí qué hace este proyecto, para qué sirve y qué aprendiste haciéndolo.
+                Sé concreto/a y honesto/a: si es un ejercicio del curso, dilo así.
+              </p>
+              <div class="project-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+                <!-- Añade o quita etiquetas según las tecnologías reales -->
+              </div>
+            </div>
+          </article>
+
+          <!-- PROYECTO 2 -->
+          <article class="project-card">
+            <div class="project-image">
+              <img src="assets/img/proyecto2.png" alt="Captura del Proyecto 2" />
+              <div class="project-overlay">
+                <a href="https://github.com/TU_USUARIO/TU_REPO_2" target="_blank" rel="noopener" class="project-link" aria-label="Ver en GitHub">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Nombre del Proyecto 2</h3>
+              <p class="project-desc">
+                Descripción del segundo proyecto. Explica qué problema resuelve y qué tecnologías
+                utilizaste para construirlo.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Java</span>
+                <span class="tag">SQL</span>
+                <!-- Cambia las etiquetas según tu proyecto -->
+              </div>
+            </div>
+          </article>
+
+          <!-- PROYECTO 3 — Opcional, puedes duplicar esta tarjeta si tienes más proyectos -->
+          <article class="project-card">
+            <div class="project-image">
+              <img src="assets/img/proyecto3.png" alt="Captura del Proyecto 3" />
+              <div class="project-overlay">
+                <a href="https://github.com/TU_USUARIO/TU_REPO_3" target="_blank" rel="noopener" class="project-link" aria-label="Ver en GitHub">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Nombre del Proyecto 3</h3>
+              <p class="project-desc">
+                Descripción del tercer proyecto. Si todavía no tienes un tercero, puedes eliminar
+                esta tarjeta o reemplazarla por un ejercicio significativo del curso.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Git</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SECCIÓN FORMACIÓN ========== -->
+    <section id="formacion" class="education">
+      <div class="container">
+        <div class="section-label">04 — Formación</div>
+        <h2 class="section-title">Mi trayectoria</h2>
+        <div class="timeline">
+
+          <!-- EDUCACIÓN ACTUAL — Modifica con tus datos reales -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2025 — Actualidad</span>
+              <h3 class="timeline-title">Técnico Superior en Desarrollo de Aplicaciones Multiplataforma (DAM)</h3>
+              <p class="timeline-institution"><i class="fas fa-school"></i> IES [NOMBRE DE TU CENTRO] — [TU CIUDAD]</p>
+              <p class="timeline-desc">
+                Ciclo formativo de grado superior. Aprendiendo programación orientada a objetos,
+                bases de datos, desarrollo web, entornos de desarrollo y más.
+              </p>
+            </div>
+          </div>
+
+          <!-- ESTUDIOS PREVIOS — Cambia por los tuyos -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">AÑO INICIO — AÑO FIN</span>
+              <h3 class="timeline-title">Bachillerato Tecnológico / FP Básica / ESO</h3>
+              <!-- Pon el nombre de tu centro de estudios previos -->
+              <p class="timeline-institution"><i class="fas fa-school"></i> [NOMBRE DEL CENTRO] — [CIUDAD]</p>
+              <p class="timeline-desc">Descripción breve de tus estudios previos.</p>
+            </div>
+          </div>
+
+          <!-- FORMACIÓN COMPLEMENTARIA — Añade o quita según lo que tengas -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">AÑO</span>
+              <h3 class="timeline-title">Curso / Certificación / Formación extra</h3>
+              <p class="timeline-institution"><i class="fas fa-certificate"></i> [Plataforma o institución]</p>
+              <p class="timeline-desc">
+                Describe brevemente este curso o certificación. Si no tienes ninguno aún,
+                puedes eliminar este bloque.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SECCIÓN CONTACTO ========== -->
+    <section id="contacto" class="contact">
+      <div class="container">
+        <div class="section-label">05 — Contacto</div>
+        <h2 class="section-title">Hablemos</h2>
+        <p class="contact-intro">
+          ¿Tienes alguna pregunta, propuesta o simplemente quieres saludar?
+          No dudes en escribirme. Estoy abierto/a a nuevas oportunidades y colaboraciones.
+        </p>
+        <div class="contact-grid">
+          <div class="contact-links">
+
+            <!-- SUSTITUYE con tu email real -->
+            <a href="mailto:TU_EMAIL@ejemplo.com" class="contact-card">
+              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+              <div class="contact-info">
+                <span class="contact-type">Email</span>
+                <span class="contact-value">TU_EMAIL@ejemplo.com</span>
+              </div>
+            </a>
+
+            <!-- SUSTITUYE con tu usuario de GitHub real -->
+            <a href="https://github.com/TU_USUARIO_GITHUB" target="_blank" rel="noopener" class="contact-card">
+              <div class="contact-icon"><i class="fab fa-github"></i></div>
+              <div class="contact-info">
+                <span class="contact-type">GitHub</span>
+                <span class="contact-value">github.com/TU_USUARIO_GITHUB</span>
+              </div>
+            </a>
+
+            <!-- SUSTITUYE con tu perfil de LinkedIn real -->
+            <a href="https://linkedin.com/in/TU_PERFIL" target="_blank" rel="noopener" class="contact-card">
+              <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+              <div class="contact-info">
+                <span class="contact-type">LinkedIn</span>
+                <span class="contact-value">linkedin.com/in/TU_PERFIL</span>
+              </div>
+            </a>
+
+            <!-- OPCIONAL: Añade tu ciudad o teléfono si quieres -->
+            <div class="contact-card contact-card-static">
+              <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div class="contact-info">
+                <span class="contact-type">Ubicación</span>
+                <span class="contact-value">TU CIUDAD, España</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <p>Diseñado y desarrollado por <strong>TU NOMBRE</strong> · 2025</p>
+      <p class="footer-sub">Hecho con HTML, CSS y muchas ganas de aprender.</p>
+    </div>
+  </footer>
+
+  <!-- Botón volver arriba -->
+  <button class="back-to-top" id="backToTop" aria-label="Volver arriba">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
